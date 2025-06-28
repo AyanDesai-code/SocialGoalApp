@@ -1,0 +1,7 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.template import loader
+def goals(request):
+    template = loader.get_template('myfirst.html')
+    return HttpResponse(template.render())
+# Create your views here.virtual environment to code in django
